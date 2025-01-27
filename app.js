@@ -55,3 +55,45 @@ const {make, model} = car
 
 console.log(make)
 console.log(model)
+
+// ! Exercise 4: 
+// a. Duplicate the provided `morePizzaToppings` array using the spread 
+//    operator and assign it to a variable named `uncontroversialPizzaToppings`.
+// 
+// b. Console log the `uncontroversialPizzaToppings` variable.
+//
+// Starting code (don't modify this):
+
+const morePizzaToppings = ['Cheese', 'Sauce'];
+
+// Your code here:
+
+const uncontroversialPizzaToppings = [...morePizzaToppings]
+
+console.log(uncontroversialPizzaToppings)
+
+// ! Exercise 5:
+// a. Duplicate the provided `anotherCar` object and spread its values into a 
+//    new variable named `myCar`.
+//
+// b. Change the `make` and `model` properties of the `myCar` object to new 
+//    values.
+//
+// c. Console log both objects and observe the results.
+//
+// Starting code (don't modify this):
+
+const anotherCar = {
+    make: 'Toyota',
+    model: 'RAV4',
+  };
+  
+  // Your code here:
+  
+const myCar = {...anotherCar}  
+
+myCar.make = 'Honda'
+myCar.model = 'Odyssey'
+
+console.log(anotherCar)
+console.log(myCar)
